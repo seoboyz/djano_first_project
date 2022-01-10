@@ -6,9 +6,10 @@ def index(request):
     context = {
         'Name': 'Arav',
         'Age': 35,
-        'Nationality': 'American'
+        'Nationality': 'American',
+        'Profile_Image': 'profile.jpg',
     }
-    return render(request, 'index.html', context)
+    return render(request, 'crm.html', context)
 
 def counter(request):
     x = request.GET['pack']
