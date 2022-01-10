@@ -1,1 +1,8 @@
-<h1>I am trying</h1>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<h1>I am trying {{ Name|lower }}</h1>
+<h2>{{ Name }} is {{ Age }} years old and is from {{ Nationality|lower }}</h2>
+<form action="counter">
+    <textarea type="text" name="pack"></textarea><br>
+    <input type="submit">
+</form>
